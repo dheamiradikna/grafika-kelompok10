@@ -27,18 +27,16 @@ int main (int argc, char **argv)
 	
 	glutDisplayFunc(display);
 	glutKeyboardFunc(keyboard);
-
 	glutReshapeFunc(resize);
-
 	glutMainLoop();
 	return 0;
 }
 
 
-void house(float x,float y,float z) // Balok
+void house(float x,float y,float z) // Ukuran Objek Kubus
 {
-	// Kanan
-	glColor3f(0.7,0.7,0.7);
+	// Sisi Kanan
+	glColor3f(0.7,0.7,0.7); // warna
 	glBegin(GL_POLYGON);
 	glVertex3f(x,y,z);
 	glVertex3f(x,y,z+25);
@@ -46,8 +44,8 @@ void house(float x,float y,float z) // Balok
 	glVertex3f(x,y+25,z);
 	glEnd();
 
-	// Kiri
-	glColor3f(0.7,0.7,0.7);
+	// Sisi Kiri
+	glColor3f(0.7,0.7,0.7); // Warna
 	glBegin(GL_POLYGON);
 	glVertex3f(x-25,y,z);
 	glVertex3f(x-25,y+25,z);
@@ -55,8 +53,8 @@ void house(float x,float y,float z) // Balok
 	glVertex3f(x-25,y,z+25);
 	glEnd();
 
-	// Depan
-	glColor3f(0.7,0.7,0.7);
+	// Sisi Depan
+	glColor3f(0.7,0.7,0.7); // Warna
 	glBegin(GL_POLYGON);
 	glVertex3f(x,y,z+25);
 	glVertex3f(x-25,y,z+25);
@@ -64,8 +62,8 @@ void house(float x,float y,float z) // Balok
 	glVertex3f(x,y+25,z+25);
 	glEnd();
 
-	// Belakang
-	glColor3f(0.7,0.7,0.7);
+	// Sisi Belakang
+	glColor3f(0.7,0.7,0.7); // Warna
 	glBegin(GL_POLYGON);
 	glVertex3f(x-25,y,z);
 	glVertex3f(x-25,y+25,z);
@@ -73,8 +71,8 @@ void house(float x,float y,float z) // Balok
 	glVertex3f(x,y,z);
 	glEnd();
 
-	// Atas
-	glColor3f(0.7,0.7,0.7);
+	// Sisi Atas
+	glColor3f(0.7,0.7,0.7); // Warna
 	glBegin(GL_POLYGON);
 	glVertex3f(x-25,y+25,z);
 	glVertex3f(x,y+25,z);
@@ -84,39 +82,39 @@ void house(float x,float y,float z) // Balok
 }
 
 
-void house1() // Kiri(-175) Kanan(150), Atas Bawah, Maju(175) Mundur(-200)
+void house1() // Nilai Maksimal Letak Kubus = Kiri(-175) Kanan(150), Atas Bawah, Maju(175) Mundur(-200)
 {
-	// Baris 1
-	house(-175,0,-200);
+	// Baris 1 (Paling kiri dari belakang ke depan)
+	house(-175,0,-200); // Paling belakang
 	house(-175,0,-175);
 	house(-175,0,-150);
-    house(-175,0,-125);
-    house(-175,0,-100);
-    house(-175,0,-75);
-    house(-175,0,-50);
-    house(-175,0,-25);
-    house(-175,0,0);
-    house(-175,0,25);
-    house(-175,0,50);
-    house(-175,0,75);
-    house(-175,0,100);
-    house(-175,0,125);
-    house(-175,0,150);
-    house(-175,0,175);
+    	house(-175,0,-125);
+    	house(-175,0,-100);
+    	house(-175,0,-75);
+    	house(-175,0,-50);
+    	house(-175,0,-25);
+    	house(-175,0,0);
+    	house(-175,0,25);
+    	house(-175,0,50);
+    	house(-175,0,75);
+    	house(-175,0,100);
+    	house(-175,0,125);
+    	house(-175,0,150);
+    	house(-175,0,175); // Paling Depan
     
-    // Baris 2
+    	// Baris 2
 	
 	// Baris 3
-    house(-125,0,175);
-    house(-125,0,-200);
+    	house(-125,0,175);
+    	house(-125,0,-200);
     
-    // Baris 4
-    house(-100,0,175);
-    house(-100,0,-200);
+    	// Baris 4
+    	house(-100,0,175);
+    	house(-100,0,-200);
     
-    // Baris 5
-    house(-75,0,175);
-    house(-75,0,-200);
+    	// Baris 5
+    	house(-75,0,175);
+    	house(-75,0,-200);
     
 	// Baris 6
 	house(-50,0,175);
@@ -156,23 +154,23 @@ void house1() // Kiri(-175) Kanan(150), Atas Bawah, Maju(175) Mundur(-200)
 	
 	// Baris 13
     
-    // Baris 14
+    	// Baris 14
 	house(200,0,-200);
-    house(200,0,-175);
+    	house(200,0,-175);
 	house(200,0,-150);
-    house(200,0,-125);
-    house(200,0,-100);
-    house(200,0,-75);
-    house(200,0,-50);
-    house(200,0,-25);
-    house(200,0,0);
-    house(200,0,25);
-    house(200,0,50);
-    house(200,0,75);
-    house(200,0,100);
-    house(200,0,125);
-    house(200,0,150);
-    house(200,15,175);
+    	house(200,0,-125);
+    	house(200,0,-100);
+    	house(200,0,-75);
+    	house(200,0,-50);
+    	house(200,0,-25);
+    	house(200,0,0);
+    	house(200,0,25);
+    	house(200,0,50);
+    	house(200,0,75);
+    	house(200,0,100);
+    	house(200,0,125);
+    	house(200,0,150);
+    	house(200,15,175);
 }
 
 
@@ -191,7 +189,7 @@ void display(void)
 	glBegin(GL_QUADS);
 	
 	glColor3f(0.8,0.6,0.4);
-    glVertex3f(-200.0, 0.0, -200.0);
+    	glVertex3f(-200.0, 0.0, -200.0);
 	
 	glColor3f(0.8,0.6,0.4);
 	glVertex3f(-200.0, 0.0, 200.0);
@@ -208,8 +206,6 @@ void display(void)
 	house1();
 	glFlush();
 	glutSwapBuffers();
-
-
 }
 
 
@@ -249,12 +245,11 @@ void keyboard(unsigned char key, int x, int y)
 				
 		case 'q':
 		case 'Q':
-    	glRotatef(-2,1.0,0.0,0.0); // Jempalikan
+    		glRotatef(-2,1.0,0.0,0.0); // Jempalikan (Perlu diatur nilainya)
 
-    	case 'e':
-    	case 'E':
-        glRotatef(1,0.0,1.0,0.0); // Muter
-
+    		case 'e':
+    		case 'E':
+        	glRotatef(1,0.0,1.0,0.0); // Muter
 	}
 	display();
 }
