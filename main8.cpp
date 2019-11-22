@@ -54,7 +54,7 @@ void house(float x,float y,float z) // Ukuran Objek Kubus
 	glEnd();
 
 	// Sisi Depan
-	glColor3f(0.7,0.7,0.7); // Warna
+	glColor3f(0.75,0.75,0.75); // Warna
 	glBegin(GL_POLYGON);
 	glVertex3f(x,y,z+25);
 	glVertex3f(x-25,y,z+25);
@@ -63,7 +63,7 @@ void house(float x,float y,float z) // Ukuran Objek Kubus
 	glEnd();
 
 	// Sisi Belakang
-	glColor3f(0.7,0.7,0.7); // Warna
+	glColor3f(0.75,0.75,0.75); // Warna
 	glBegin(GL_POLYGON);
 	glVertex3f(x-25,y,z);
 	glVertex3f(x-25,y+25,z);
@@ -72,7 +72,7 @@ void house(float x,float y,float z) // Ukuran Objek Kubus
 	glEnd();
 
 	// Sisi Atas
-	glColor3f(0.7,0.7,0.7); // Warna
+	glColor3f(0.8,0.8,0.8); // Warna
 	glBegin(GL_POLYGON);
 	glVertex3f(x-25,y+25,z);
 	glVertex3f(x,y+25,z);
@@ -88,89 +88,165 @@ void house1() // Nilai Maksimal Letak Kubus = Kiri(-175) Kanan(150), Atas Bawah,
 	house(-175,0,-200); // Paling belakang
 	house(-175,0,-175);
 	house(-175,0,-150);
-    	house(-175,0,-125);
-    	house(-175,0,-100);
-    	house(-175,0,-75);
-    	house(-175,0,-50);
-    	house(-175,0,-25);
-    	house(-175,0,0);
-    	house(-175,0,25);
-    	house(-175,0,50);
-    	house(-175,0,75);
-    	house(-175,0,100);
-    	house(-175,0,125);
-    	house(-175,0,150);
-    	house(-175,0,175); // Paling Depan
+	house(-175,0,-125);
+    house(-175,0,-100);
+    house(-175,0,-75);
+    house(-175,0,-50);
+    house(-175,0,-25);
+    house(-175,0,0);
+    house(-175,0,25);
+    house(-175,0,50);
+    house(-175,0,75);
+    house(-175,0,100);
+    house(-175,0,125);
+    house(-175,0,150);
+    house(-175,0,175); // Paling Depan
     
-    	// Baris 2
+    // Baris 2
+    house(-150,0,-25);
+	house(-150,0,100);
+	house(-150,0,150);
+	house(-150,0,175);
 	
 	// Baris 3
-    	house(-125,0,175);
-    	house(-125,0,-200);
+	house(-125,0,-200);
+	house(-125,0,-175);
+	house(-125,0,-125);
+	house(-125,0,-100);
+	house(-125,0,-75);
+	house(-125,0,-50);
+	house(-125,0,25);
+	house(-125,0,75);
+    house(-125,0,175);
     
-    	// Baris 4
-    	house(-100,0,175);
-    	house(-100,0,-200);
+    // Baris 4
+    house(-100,0,-200);
+    house(-100,0,-50);
+    house(-100,0,0);
+    house(-100,0,75);
+    house(-100,0,100);
+    house(-100,0,150);
+    house(-100,0,175);
     
-    	// Baris 5
-    	house(-75,0,175);
-    	house(-75,0,-200);
+    // Baris 5
+    house(-75,0,-200);
+    house(-75,0,-175);
+    house(-75,0,-125);
+    house(-75,0,-100);
+    house(-75,0,-50);
+    house(-75,0,25);
+    house(-75,0,125);
+    house(-75,0,175);
     
 	// Baris 6
-	house(-50,0,175);
 	house(-50,0,-200);
-    
-	// Baris 5
-	house(-25,0,175);
-	house(-25,0,-200);
-    
-	// Baris 6
-	house(0,0,175);
-	house(0,0,-200);
+	house(-50,0,-175);
+	house(-50,0,-125);
+	house(-50,0,-25);
+	house(-50,0,25);
+	house(-50,0,75);
+	house(-50,0,175);
     
 	// Baris 7
-	house(25,0,175);
-	house(25,0,-200);
+	house(-25,0,-200);
+	house(-25,0,-150);
+	house(-25,0,-75);
+	house(-25,0,-50);
+	house(-25,0,25);
+	house(-25,0,50);
+	house(-25,0,100);
+	house(-25,0,125);
+	house(-25,0,175);
     
 	// Baris 8
-	house(50,0,175);
-	house(50,0,-200);
+	house(0,0,-200);
+	house(0,0,-100);
+	house(0,0,-50);
+	house(0,0,0);
+	house(0,0,100);
+	house(0,0,175);
     
 	// Baris 9
-	house(75,0,175);
-	house(75,0,-200);
+	house(25,0,-200);
+	house(25,0,-175);
+	house(25,0,-125);
+	house(25,0,-50);
+	house(25,0,0);
+	house(25,0,50);
+	house(25,0,150);
+	house(25,0,175);
     
 	// Baris 10
-	house(100,0,175);
-	house(100,0,-200);
+	house(50,0,-200);
+	house(50,0,-175);
+	house(50,0,-100);
+	house(50,0,-50);
+	house(50,0,0);
+	house(50,0,50);
+	house(50,0,100);
+	house(50,0,125);
+	house(50,0,175);
     
 	// Baris 11
-	house(125,0,175);
-	house(125,0,-200);
+	house(75,0,-200);
+	house(75,0,-125);
+	house(75,0,-75);
+	house(75,0,0);
+	house(75,0,75);
+	house(75,0,175);
     
-	// baris 12
-	house(150,0,175);
-	house(150,0,-200);
-	
+	// Baris 12
+	house(100,0,-200);
+	house(100,0,-175);
+	house(100,0,-25);
+	house(100,0,0);
+	house(100,0,50);
+	house(100,0,125);
+	house(100,0,175);
+    
 	// Baris 13
+	house(125,0,-200);
+	house(125,0,-125);
+	house(125,0,-100);
+	house(125,0,-50);
+	house(125,0,100);
+	house(125,0,175);
     
-    	// Baris 14
+	// baris 14
+	house(150,0,-200);
+	house(150,0,-150);
+	house(150,0,-100);
+	house(150,0,-50);
+	house(150,0,-25);
+	house(150,0,25);
+	house(150,0,75);
+	house(150,0,150);
+	house(150,0,175);
+	
+	// Baris 15
+	house(175,0,-200);
+	house(175,0,-150);
+	house(175,0,-25);
+	house(175,0,50);
+	house(175,0,100);
+    
+    // Baris 16
 	house(200,0,-200);
-    	house(200,0,-175);
+    house(200,0,-175);
 	house(200,0,-150);
-    	house(200,0,-125);
-    	house(200,0,-100);
-    	house(200,0,-75);
-    	house(200,0,-50);
-    	house(200,0,-25);
-    	house(200,0,0);
-    	house(200,0,25);
-    	house(200,0,50);
-    	house(200,0,75);
-    	house(200,0,100);
-    	house(200,0,125);
-    	house(200,0,150);
-    	house(200,15,175);
+    house(200,0,-125);
+    house(200,0,-100);
+    house(200,0,-75);
+    house(200,0,-50);
+    house(200,0,-25);
+    house(200,0,0);
+    house(200,0,25);
+    house(200,0,50);
+    house(200,0,75);
+    house(200,0,100);
+    house(200,0,125);
+    house(200,0,150);
+    house(200,0,175);
 }
 
 
@@ -264,4 +340,3 @@ void resize(int width, int height)
 	glTranslatef(0.0, -15.0, -320.0);
 	glMatrixMode(GL_MODELVIEW);
 }
-
