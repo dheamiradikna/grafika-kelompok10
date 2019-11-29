@@ -10,10 +10,7 @@ void init(void);
 void display(void);
 void keyboard(unsigned char, int, int);
 void resize(int, int);
-void draw_star(float,float);
 void house(float,float,float);
-void circle1(float);
-void stand(float ,float ,float );
 float  h=5,h1=6,d1=4,g=1,g1=2;
 
 int main (int argc, char **argv)
@@ -265,7 +262,7 @@ void display(void)
 	glBegin(GL_QUADS);
 	
 	glColor3f(0.8,0.6,0.4);
-    	glVertex3f(-200.0, 0.0, -200.0);
+    glVertex3f(-200.0, 0.0, -200.0);
 	
 	glColor3f(0.8,0.6,0.4);
 	glVertex3f(-200.0, 0.0, 200.0);
@@ -277,8 +274,6 @@ void display(void)
 	glVertex3f(200.0, 0.0, -200.0);
 	
 	glEnd();
-	glFlush();
-    
 	house1();
 	glFlush();
 	glutSwapBuffers();
@@ -321,11 +316,11 @@ void keyboard(unsigned char key, int x, int y)
 				
 		case 'q':
 		case 'Q':
-    		glRotatef(-2,1.0,0.0,0.0); // Jempalikan (Perlu diatur nilainya)
+    	glRotatef(-2,1.0,1.0,0.0); // Jempalikan (Perlu diatur nilainya)
 
-    		case 'e':
-    		case 'E':
-        	glRotatef(1,0.0,1.0,0.0); // Muter
+    	case 'e':
+    	case 'E':
+        glRotatef(1,0.0,1.0,0.0); // Muter
 	}
 	display();
 }
